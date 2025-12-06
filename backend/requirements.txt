@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pymysql
+SQLAlchemy
+python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+pydantic
+requests
+email-validator
+stripe
+razorpay
