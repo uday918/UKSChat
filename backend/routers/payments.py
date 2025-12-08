@@ -127,7 +127,7 @@ async def razorpay_verify(
     db.commit()
     db.refresh(payment)
 
-    plan = payment.plan  # ensure relationship is loaded
+    plan = payment.plan
     activate_subscription(db, current_user.id, plan)
 
     user = current_user

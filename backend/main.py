@@ -29,7 +29,7 @@ db.close()
 # FastAPI App
 app = FastAPI(title="UKSChat - AI SaaS Backend")
 
-# CORS
+# CORS (Cross-Origin Resource Sharing)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

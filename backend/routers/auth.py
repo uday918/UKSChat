@@ -48,7 +48,7 @@ def register(user_in: schemas.UserCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(user)
 
-    # ⭐ Auto activate Free Tier ⭐
+    # Auto activate Free Tier
     activate_free_plan(db, user.id)
 
     return user

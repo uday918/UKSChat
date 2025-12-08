@@ -7,7 +7,6 @@ from deps import get_db, get_current_user
 
 router = APIRouter(prefix="/subscription", tags=["Subscription"])
 
-
 @router.get("/me")
 def my_subscription(
     db: Session = Depends(get_db),
@@ -31,7 +30,7 @@ def my_subscription(
 
     return {
         "active": True,
-        "plan_id": plan.id,  # ⭐ Added for UI button logic
+        "plan_id": plan.id,
         "plan_name": plan.name,
         "price": plan.price,
         "currency": plan.currency,

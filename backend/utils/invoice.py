@@ -23,7 +23,7 @@ def generate_invoice(payment, user, plan):
     c.drawString(50, 690, f"Date: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}")
 
     c.drawString(50, 650, "Thank you for your purchase!")
-    c.drawString(50, 630, "Enjoy priority AI access 🚀")
+    c.drawString(50, 630, "Enjoy priority AI access")
 
     c.showPage()
     c.save()
