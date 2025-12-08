@@ -119,3 +119,7 @@ python -c "import bcrypt; print(bcrypt.__version__)"
   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
   ```
 - If a specific package fails to install, try installing it individually with a compatible version.
+
+Windows (PowerShell): Quick Start Application Backend
+- .\venv\Scripts\activate
+- uvicorn main:app --reload
