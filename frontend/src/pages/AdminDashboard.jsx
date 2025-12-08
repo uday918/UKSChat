@@ -11,9 +11,7 @@ export default function AdminDashboard() {
             try {
                 const s = await adminGetUsageSummary();
                 setSummary(s);
-            } catch {
-                // ignore
-            }
+            } catch { }
         })();
     }, []);
 

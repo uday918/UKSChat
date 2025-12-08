@@ -8,8 +8,8 @@ import AdminDashboard from "./pages/AdminDashboard";
 import AdminPlans from "./pages/AdminPlans";
 import AdminPayments from "./pages/AdminPayments";
 import Pricing from "./pages/Pricing";
-import Billing from "./pages/Billing";  // <--- Added
-import Profile from "./pages/Profile";  // <--- Added
+import Billing from "./pages/Billing";
+import Profile from "./pages/Profile";
 
 function PrivateRoute({ children, adminOnly = false }) {
   const token = localStorage.getItem("token");
