@@ -224,6 +224,9 @@ app.add_middleware(
 - **Axios Documentation**: https://axios-http.com/
 - **MDN Web Docs**: https://developer.mozilla.org/
 
+Windows (PowerShell): Quick Start Application Frontend
+- npm run dev
+
 ---
 
 **Happy coding! **
