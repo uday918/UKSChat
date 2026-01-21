@@ -13,7 +13,7 @@ export default function Profile() {
     }, []);
 
     const cancelSubscription = async () => {
-        await fetch("http://localhost:8000/subscription/cancel", {
+        await fetch(`${import.meta.env.VITE_API_BASE || "http://localhost:8000"}/subscription/cancel`, {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,

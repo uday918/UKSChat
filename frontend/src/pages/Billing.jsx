@@ -31,7 +31,7 @@ export default function Billing() {
                             <td>{p.plan_name}</td>
                             <td>{p.currency} {p.amount.toFixed(2)}</td>
                             <td>
-                                <a href={`http://localhost:8000/payments/invoice/${p.id}`} target="_blank">
+                                <a href={`${import.meta.env.VITE_API_BASE || "http://localhost:8000"}/payments/invoice/${p.id}`} target="_blank">
                                     Download
                                 </a>
                             </td>
